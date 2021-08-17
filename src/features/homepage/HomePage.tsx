@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
-
-import ImageSlider from "./ImageSlider";
 import "./HomePage.css";
+import ImageSlider from "./ImageSlider";
 
 const HomePage: FC = () => {
   return (

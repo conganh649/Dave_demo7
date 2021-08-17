@@ -1,10 +1,10 @@
-import React, { FC, useEffect, useState } from "react";
 import { Button } from "@material-ui/core";
 import axios from "axios";
+import React, { FC, useEffect, useState } from "react";
 import { useAppDispatch } from "../../app/hooks";
-
 import { authActions } from "../auth/authSlice";
 import "./Table.css";
+
 const Table: FC = () => {
   const dispatch = useAppDispatch();
   const [movies, setMovies] = useState<any>([]);
