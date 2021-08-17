@@ -1,0 +1,16 @@
+body {
+  text-align: center !important;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%) !important;
+  font-family: "Roboto", sans-serif !important;
+}
+
+h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+h2 {
+  color: #ffffff;
+  font-weight: 800;
+}

@@ -1,0 +1,29 @@
+.slider-wrapper {
+  height: 700px;
+  overflow: hidden;
+}
+
+.slider-image {
+  background-size: cover !important;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+}
+
+.name .wrapper {
+  border: 2px solid white;
+  height: 121px;
+  margin: 6px !important;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  padding: 21px 70px 110px 70px !important;
+  text-transform: uppercase;
+}
