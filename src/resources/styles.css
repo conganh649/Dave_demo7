@@ -2,6 +2,8 @@ body {
   text-align: center !important;
   background: linear-gradient(to right, #30cfd0 0%, #330867 100%) !important;
   font-family: "Roboto", sans-serif !important;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {

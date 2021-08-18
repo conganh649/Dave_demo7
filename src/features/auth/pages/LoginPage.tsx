@@ -36,55 +36,59 @@ const LoginPage: FC = () => {
   };
 
   return (
-    <div className="overlay">
-      <form>
-        <div className="con">
-          <header className="head-form">
-            <h2>Log In</h2>
-            <p>Login here using your username and password</p>
-          </header>
-          <br />
-          <div className="field-set">
-            <input
-              className="form-input"
-              id="txt-input"
-              type="text"
-              placeholder="Enter your username"
-              value={name}
-              onChange={handleNameChange}
-            ></input>
-
+    <div>
+      <div className="overlay" style={{ marginTop: "100px" }}>
+        <form>
+          <div className="con">
+            <header className="head-form">
+              <h2>Log In</h2>
+              <p>Login here using your username and password</p>
+            </header>
             <br />
+            <div className="field-set">
+              <input
+                className="form-input"
+                id="txt-input"
+                type="text"
+                placeholder="Enter your username"
+                value={name}
+                onChange={handleNameChange}
+              ></input>
 
-            <input
-              id="pwd"
-              className="form-input"
-              type="password"
-              placeholder="Enter your password"
-              value={pass}
-              onChange={handlePassChange}
-            ></input>
-          </div>
-          <div>
-            <Button
-              onClick={handelLoginClick}
-              style={{
-                width: "240px",
-                border: "1px solid",
-                marginTop: "10px",
-              }}
-            >
-              Login
-            </Button>
+              <br />
 
-            <ToastContainer />
-            <div className="other">
-              <button className="btn submits frgt-pass">Forgot Password</button>
-              <button className="btn submits sign-up">Sign Up</button>
+              <input
+                id="pwd"
+                className="form-input"
+                type="password"
+                placeholder="Enter your password"
+                value={pass}
+                onChange={handlePassChange}
+              ></input>
+            </div>
+            <div>
+              <Button
+                onClick={handelLoginClick}
+                style={{
+                  width: "240px",
+                  border: "1px solid",
+                  marginTop: "10px",
+                }}
+              >
+                Login
+              </Button>
+
+              <ToastContainer />
+              <div className="other">
+                <button className="btn submits frgt-pass">
+                  Forgot Password
+                </button>
+                <button className="btn submits sign-up">Sign Up</button>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 };
